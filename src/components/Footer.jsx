@@ -1,4 +1,5 @@
 import { FadeIn } from './AnimatedText'
+import logo from '../assets/logo.png'
 
 const footerLinks = [
   { label: 'Instagram', href: '#' },
@@ -7,24 +8,23 @@ const footerLinks = [
 ]
 
 const hours = [
-  { day: 'Monday – Friday', time: '7:00 AM – 10:00 PM' },
-  { day: 'Saturday – Sunday', time: '8:00 AM – 11:00 PM' },
+  { day: 'Mon-Fri', time: '11:30 AM – 10:30 PM' },
+  { day: 'Saturday', time: '11:30 AM – 11:00 PM' },
+  { day: 'Sunday', time: '11:30 AM – 11:30 PM' },
 ]
 
 export default function Footer() {
   return (
-    <footer className="bg-dark-brown text-cream py-20 md:py-28">
+    <footer className="bg-dark-brown text-cream py-12 md:py-16">
       <div className="max-w-[1400px] mx-auto px-6 md:px-10">
         {/* Top section */}
         <FadeIn>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-12 md:gap-16 mb-16 md:mb-24">
             {/* Brand */}
             <div>
-              <h3 className="font-display text-4xl md:text-5xl font-medium mb-4 text-cream-light">
-                Tmira
-              </h3>
+              <img src={logo} alt="Tmira Logo" className="h-16 md:h-20 w-auto object-contain mb-6" />
               <p className="text-editorial-body text-cream/70 max-w-xs">
-                Your neighborhood café where every cup tells a story and every visit feels like home.
+                Tmira – A Sip of Mira Road. More than just a café, Tmira is where Mira Road comes alive in every cup.
               </p>
             </div>
 

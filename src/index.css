@@ -79,7 +79,7 @@ html.lenis, html.lenis body {
 /* Editorial typography utilities */
 .text-editorial-hero {
   font-family: var(--font-display);
-  font-size: clamp(3rem, 7.5vw, 7.5rem);
+  font-size: clamp(2.2rem, 7.5vw, 7.5rem);
   line-height: 0.95;
   letter-spacing: -0.03em;
   font-weight: 500;
@@ -87,7 +87,7 @@ html.lenis, html.lenis body {
 
 .text-editorial-heading {
   font-family: var(--font-display);
-  font-size: clamp(2.5rem, 6vw, 5.5rem);
+  font-size: clamp(1.8rem, 6vw, 5.5rem);
   line-height: 1.05;
   letter-spacing: -0.02em;
   font-weight: 500;
@@ -155,5 +155,25 @@ html.lenis, html.lenis body {
 @media (max-width: 640px) {
   .masonry-grid {
     columns: 1;
+  }
+}
+
+/* Mobile viewport height fix for address bar */
+@supports (height: 100dvh) {
+  .h-screen-safe {
+    height: 100dvh;
+  }
+}
+
+/* Mobile touch targets */
+@media (max-width: 768px) {
+  .text-editorial-hero {
+    font-size: clamp(2rem, 10vw, 3.5rem);
+  }
+  .text-editorial-heading {
+    font-size: clamp(1.6rem, 7vw, 2.5rem);
+  }
+  .text-editorial-body {
+    font-size: 0.95rem;
   }
 }

@@ -2,10 +2,10 @@ import { AnimatedWords, FadeIn, ScaleIn } from '../components/AnimatedText'
 
 export default function Story() {
   return (
-    <section id="story" className="bg-cream py-24 md:py-36 overflow-hidden">
-      <div className="max-w-[1400px] mx-auto px-6 md:px-10">
+    <section id="story" className="bg-cream py-16 md:py-36 overflow-hidden">
+      <div className="max-w-[1400px] mx-auto px-5 md:px-10">
         
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 lg:gap-20 items-center">
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-10 lg:gap-20 items-center">
           
           {/* Left: Text */}
           <div className="order-2 lg:order-1">
@@ -17,7 +17,7 @@ export default function Story() {
             
             <h2 className="mb-10 lg:mb-12">
               <AnimatedWords 
-                text="We didn't set out to build a brand." 
+                text="From the Streets of Mira Road, with Warmth" 
                 className="text-editorial-heading text-dark-brown" 
               />
             </h2>
@@ -25,12 +25,12 @@ export default function Story() {
             <div className="space-y-6 max-w-lg">
               <FadeIn delay={0.4}>
                 <p className="text-editorial-body text-brown-medium">
-                  We set out to build a feeling. A place where the music is just right, the coffee is always honest, and the door is always open.
+                  Open since 2020, Tmira isn't just a tea café — it's a vibe. Built for casual catch-ups, spontaneous evenings, and long conversations, we offer a relaxing space with a drink-first, food-second approach.
                 </p>
               </FadeIn>
               <FadeIn delay={0.6}>
                 <p className="text-editorial-body text-brown-medium">
-                  Tmira started as a simple idea — what if a café could feel like a friend's living room? Three years later, that idea hasn't changed. Only the number of friends has.
+                  Whether you're sipping solo or laughing in a group, we're here to serve warmth in every cup.
                 </p>
               </FadeIn>
             </div>
@@ -42,7 +42,7 @@ export default function Story() {
           
           {/* Right: Image */}
           <div className="order-1 lg:order-2">
-            <ScaleIn delay={0.3} className="rounded-2xl overflow-hidden w-full h-[500px] lg:h-[700px] relative">
+            <ScaleIn delay={0.3} className="rounded-2xl overflow-hidden w-full h-[300px] md:h-[500px] lg:h-[700px] relative">
               <div className="absolute inset-0 bg-dark-brown/5 z-10" />
               <img 
                 src="/images/barista_work.png" 

@@ -11,10 +11,10 @@ const images = [
 
 export default function Gallery() {
   return (
-    <section id="gallery" className="bg-cream py-24 md:py-36">
-      <div className="max-w-[1400px] mx-auto px-6 md:px-10">
+    <section id="gallery" className="bg-cream py-16 md:py-36">
+      <div className="max-w-[1400px] mx-auto px-5 md:px-10">
         
-        <div className="mb-16 md:mb-24 flex flex-col items-center text-center">
+        <div className="mb-10 md:mb-24 flex flex-col items-center text-center">
           <FadeIn>
             <span className="text-editorial-label text-warm-orange mb-6 block">
               THE COMMUNITY
@@ -25,7 +25,7 @@ export default function Gallery() {
           </AnimatedText>
         </div>
 
-        <div className="columns-1 md:columns-2 lg:columns-3 gap-6 space-y-6">
+        <div className="columns-1 md:columns-2 lg:columns-3 gap-4 md:gap-6 space-y-4 md:space-y-6">
           {images.map((img, idx) => (
             <div key={idx} className="break-inside-avoid">
               <FadeIn delay={img.delay}>

@@ -26,11 +26,11 @@ const experiences = [
 
 export default function Experience() {
   return (
-    <section id="experience" className="bg-cream-light py-24 md:py-36">
-      <div className="max-w-[1400px] mx-auto px-6 md:px-10">
+    <section id="experience" className="bg-cream-light py-16 md:py-36">
+      <div className="max-w-[1400px] mx-auto px-5 md:px-10">
         
         {/* Header */}
-        <div className="mb-16 md:mb-24 flex flex-col items-center text-center">
+        <div className="mb-10 md:mb-24 flex flex-col items-center text-center">
           <FadeIn>
             <span className="text-editorial-label text-warm-orange mb-6 block">
               THE EXPERIENCE
@@ -42,7 +42,7 @@ export default function Experience() {
         </div>
 
         {/* Cards */}
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-6 md:gap-8">
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-4 md:gap-8">
           {experiences.map((exp, index) => (
             <FadeIn key={exp.id} delay={0.2 + index * 0.15}>
               <div className="group bg-white-warm rounded-2xl overflow-hidden shadow-sm hover:shadow-xl hover:-translate-y-2 transition-all duration-500 ease-out h-full flex flex-col">

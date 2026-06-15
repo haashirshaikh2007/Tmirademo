@@ -1,5 +1,6 @@
 import { useState, useEffect } from 'react'
 import { motion, AnimatePresence } from 'motion/react'
+import logo from '../assets/logo.png'
 
 const navLinks = [
   { label: 'Experience', href: '#experience' },
@@ -56,9 +57,9 @@ export default function Navbar() {
           <a
             href="#"
             onClick={(e) => { e.preventDefault(); window.scrollTo({ top: 0, behavior: 'smooth' }) }}
-            className="font-display text-xl md:text-2xl font-medium text-dark-brown tracking-tight hover:text-warm-orange transition-colors duration-500"
+            className="flex items-center hover:opacity-80 transition-opacity duration-500"
           >
-            Tmira
+            <img src={logo} alt="Tmira Logo" className="h-10 md:h-12 w-auto object-contain" />
           </a>
 
           {/* Desktop Nav */}

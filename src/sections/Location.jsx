@@ -2,10 +2,10 @@ import { AnimatedWords, FadeIn, ScaleIn } from '../components/AnimatedText'
 
 export default function Location() {
   return (
-    <section id="location" className="bg-cream-light py-24 md:py-36 overflow-hidden">
+    <section id="location" className="bg-cream-light py-16 md:py-20 overflow-hidden">
       <div className="max-w-[1400px] mx-auto px-6 md:px-10">
         
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 lg:gap-20 items-center">
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-10 lg:gap-20 items-center">
           
           {/* Left: Text */}
           <div>
@@ -17,7 +17,7 @@ export default function Location() {
             
             <h2 className="mb-12">
               <AnimatedWords 
-                text="Find your spot at our table." 
+                text="No Reservations. Just Real Conversations." 
                 className="text-editorial-heading text-dark-brown" 
               />
             </h2>
@@ -27,21 +27,24 @@ export default function Location() {
                 <div>
                   <h4 className="font-display text-2xl text-dark-brown mb-3">Address</h4>
                   <p className="text-editorial-body text-brown-medium">
-                    124 Neighborhood Lane<br />
-                    Creative District, City 400001<br />
-                    (Next to the old bookstore)
+                    Shop no. 13, Krishna Prestige<br />
+                    opp. Jay Ambe Hospital, Mira Road East<br />
+                    Mira Bhayandar, Maharashtra 401107
                   </p>
                 </div>
               </FadeIn>
 
               <FadeIn delay={0.6}>
                 <div>
-                  <h4 className="font-display text-2xl text-dark-brown mb-3">Contact</h4>
+                  <h4 className="font-display text-2xl text-dark-brown mb-3">Hours</h4>
                   <p className="text-editorial-body text-brown-medium mb-1">
-                    hello@cafetmira.com
+                    Mon-Fri: 11:30 am - 10:30 pm
+                  </p>
+                  <p className="text-editorial-body text-brown-medium mb-1">
+                    Saturday: 11:30 am - 11:00 pm
                   </p>
                   <p className="text-editorial-body text-brown-medium">
-                    +91 98765 43210
+                    Sunday: 11:30 am - 11:30 pm
                   </p>
                 </div>
               </FadeIn>
@@ -49,7 +52,7 @@ export default function Location() {
           </div>
           
           {/* Right: Map Placeholder */}
-          <div className="h-[500px] lg:h-[700px] w-full">
+          <div className="h-[300px] md:h-[500px] lg:h-[700px] w-full">
             <ScaleIn delay={0.3} className="w-full h-full rounded-2xl overflow-hidden relative shadow-lg">
               {/* Replace src with an actual Google Maps embed URL when available */}
               <iframe 
